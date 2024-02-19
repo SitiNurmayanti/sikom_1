@@ -16,8 +16,10 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('_template_back.layout');
-// });
+ Route::get('/', function () {
+    return view('_template_back.layout');
+ });
 
-Route::ge
+Route::get('/', [LoginController::class, 'login'])->name('login');
+// ROUTE BARU
+Route::resource('buku', BukuController::class);
