@@ -167,7 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        // Maatwebsite\Excel\ExcelServiceProvaider::class,
         /*
          * Application Service Providers...
          */
@@ -190,8 +190,8 @@ return [
     |
     */
 
-    'aliases' => Facade::defaultAliases()->merge([
-        // ...
+      'aliases' => Facade::defaultAliases()->merge([
+       'Excel' => Maatwebsite\Excel\ExcelServiceProvaider::class,
     ])->toArray(),
 
 ];

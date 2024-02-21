@@ -15,7 +15,7 @@
 										<img src="{{ asset ('assets')}}/img/faces/6.jpg" alt="user-img" class="rounded-circle mCS_img_loaded">
 									</div>
 									<div class="user-info">
-										<h6 class=" mb-0 text-dark">Siti nrm</h6>
+										<h6 class=" mb-0 text-dark">SITI NURMAYANTI</h6>
 										<span class="text-muted app-sidebar__user-name text-sm">Administrator</span>
 									</div>
 								</div>

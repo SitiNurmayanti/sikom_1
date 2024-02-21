@@ -21,8 +21,12 @@
             <div class="col-xl-12">
                 <div class="card">
                     <div class="card-header pb-0">
-                        <div class="d-flex justify-content-between">            
+                        <div class="d-flex my-auto btn-list justify-content-end">            
                             <a href="{{ route('buku.create')}}" class="btn btn-primary">Tambah Data</a>
+                            <a href="{{ route('export_excel_buku')}}" class="btn btn-success">EXPORT ECXEL</a>
+                            <a href="{{ route('export_pdf_buku') }}" class="btn btn-danger">EXPORT PDF</a> 
+                            <a class="modal-effect btn btn-dark" data-bs-effect="effect-rotate-bottom" data-bs-toggle="modal" href="#modaldemo8">Import Excel</a>
+						    </div>                       
                         </div>
                         @include('_component.pesan') 
                     </div>
@@ -64,5 +68,5 @@
             </div>
             <!--/div-->
 
-    
+    @include('data_buku.modal_import')
 @endsection
